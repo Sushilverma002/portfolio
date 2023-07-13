@@ -355,6 +355,8 @@
 .footer-container .col .social-menu ul {
   display: flex;
   gap: 1rem;
+  position: relative;
+  margin-left: 560px;
 }
 
 .footer-container .col .social-menu ul a {
@@ -364,9 +366,7 @@
 
 .footer-container .col ul li {
   list-style-type: none;
-  text-align: left;
   margin-top: 0.5rem;
-  margin-left: 270px;
 }
 .footer-container .col .social-menu ul a li{
   transition: transform  250ms ease-out, color 250ms ease-out;
