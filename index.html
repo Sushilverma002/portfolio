@@ -1,185 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- BOOTSTRAP -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <title>Sushil Verma</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- javascript/jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <!-- for fontstyle -->
-    <script src="https://kit.fontawesome.com/bfdb88219f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="./images/sushi.jpg" type="image/x-icon">
-        
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website - Sushil Verma</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
-    <body>
-        <nav id="scroll" class="navbar fixed-top navbar-expand-lg bg-light ">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">Sushil Verma</a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#jumbotron">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#footer1">portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-                </ul>
-                
-              </div>
-            </div>
-        </nav>
-
-        <!-- for middle card -->
-          <div class="content" id="jumbotron">
-            <!--<h1>Welcome to Healthista</h1-->
-            <div class="container">
-              <h3><span class="auto-type" style="font-size: 70px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align: center; margin-left: 40px; margin-bottom: -50px; margin-top: 55px;"></a></span></h3>
-            </div> 
-            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-            <script>
-              var typed = new Typed(".auto-type", {
-                strings: ["Welcome to My Portfolio."],
-                typeSpeed: 50,
-                backspeed: 50,
-                loop: true
-              })
-            </script>
-            <div class="container1">
-              <p>
-                  My name is <strong>SUSHIL VERMA </strong>, curently pursing <strong>Bachelor of Technology</strong> in <strong>COMPUTER SCIENCE</strong> from <strong>Guru gobind Singh Indraprastha University.</strong> This portfolio serves as a showcase of my skills, projects, and experiences in the field of CSE.
-                  Please take a moment to explore my portfolio and discover the projects I have worked on. If you have any questions, would like to get in touch, feel free to reach out to me using the contact information provided below. Thank you for visiting, and I look forward to connecting with you!
-              </p>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo-container">
+            <img src="./images/userAsset/navLogoS.jpg" class="logo" />
+            <div class="logo-text">ushil Verma</div>
           </div>
+
+          <div class="nav-items">
+            <div><a href="#projects">Projects</a></div>
+            <div><a href="#skills">Skills</a></div>
+            <div><a href="#contactme">Contact Me</a></div>
+          </div>
+        </div>
+
+        <div class="hero-section">
+          <div class="faded-text">Sushil Verma</div>
+
+          <div class="hero-section-left">
+            <div class="hero-section-heading">Hi! Sushil Verma</div>
+
+            <div class="hero-section-heading hero-section-sub-heading">
+              I am a <span class="role"></span>
             </div>
-            <!-- <a href="#services" class="rainbow-button" alt="Explore"></a> -->
+
+            <div class="hero-section-description">
+              I’m a software developer and here is my portfolio website. Here
+              you’ll learn about my journey as a software developer.
+            </div>
+            <div  id="btn"><a  class="btn-pink" href="https://drive.google.com/file/d/1PN0p7NzmoWhxswNGG_qrU5pcnWmAW6JV/view?usp=sharing">Download Resume</a></div>
             
+          </div>
 
-        <section id="about" class="about">
-          <h1 data-aos="flip-right">About Me</h1>
-          <div class="max-width">
-            <div data-aos="zoom-in" class="photo"><img src="./images/sushi.jpg" alt="" height="350px" width="-330px"></div>
-            <div class="about-content">
-              <p data-aos="fade-left" class="text-1"> Being a CSE student has given me the opportunity to explore various fields such as Data Science, Artificial Intelligence, and Machine Learning.I have foundation in programming languages<span> C++, HTML5, CSS3 , JAVASCRIPT , PHP, SQL</span> and I am constantly striving to improve my PROBLEM SOLVING(DSA) skills.</p>
-              <p data-aos="fade-left" class="text-3">Apart from my academic pursuits, I am an active member of <span>ENTREPRENEURSHIP-CELL </span> in my college.
-                These clubs have given me the chance to work on exciting projects and participate in hackathons and coding competitions. Through these experiences, I have learned the importance of teamwork and communication in achieving a common goal.</p>
+          <div class="hero-section-right">
+            <div class="absolute icons icon-dots">
+              <img src="./images/userAsset/dots.png" alt="" />
+            </div>
+            <div class="absolute icons icon-cube">
+              <img src="./images/userAsset/cube.png" alt="" />
+            </div>
+            <div class="absolute icons icon-circle">
+              <img src="./images/userAsset/circle.png" alt="" />
+            </div>
+            <div class="absolute icons icon-zigzag">
+              <img src="./images/userAsset/zigzags.png" alt="" />
+            </div>
+            <div class="absolute icons icon-plus">
+              <img src="./images/userAsset/plus.png" alt="" />
+            </div>
+            <div class="user-image">
+              <img
+                src="./images/userAsset/heroimage.png"
+                width="350px"
+                height="400px"
+              />
             </div>
           </div>
-          </section>
-        <!-- for cards -->
-        <h1 id="port"><br>PROJECTS</h1>
-        <div class="container" id="footer1">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="./images/linkedinclonee.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"><i class="fa-solid fa-newspaper"></i>&nbsp;Linkedin clone</h5>
-                <p class="card-text">The project is clone of LINKEDIN . In which user can perform login in , sign-up, they can send the post and many more. For hosting firebase is used. Language use <strong>React Js,Redux ,JS, Firebase,Css.</strong></p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="./images/linkedin-sales-solutions-0QvTyp0gH3A-unsplash.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"><i class="fa-solid fa-newspaper"></i>&nbsp;My Secret Dairy</h5>
-                <p class="card-text">In this project user can write about their personal view which
-                    is store in database and when ever user want to login he/she
-                    can access that data anytime. Language use <strong>HTML/CSS,Bootstrap,php,SQL.</strong></p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/Screenshot 2023-04-13 144428.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"><i class="fa-sharp fa-solid fa-mobile-screen-button"></i>&nbsp;Wheather Scraper</h5>
-                <p class="card-text">In wheather Scraper with help of <strong>HTML/CSS ,PHP,API</strong> it will show the wheather report of any country/cities. Where wheather information are like temperature,wind speed any many more.</p>
+        </div>
+      </div>
 
+      <div class="project-section" id="projects">
+        <h2 class="page-header">Projects</h2>
+
+        <div class="project-container">
+          <div class="project-card" id="project1">
+            <div class="project-number project-number-right">01</div>
+            <div class="project-content project-content-left">
+              <div class="project-skills-container">
+                <img
+                  class="project-skill"
+                  src="./images/stack/HTML.png"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/CSS.png"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/Javascript.svg"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/Express.png"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/React.png"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/Tailwind.png"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/NodeJs.svg"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/MongoDB.svg"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/Redux.svg"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/Vercel.svg"
+                  alt=""
+                />
+              </div>
+
+              <h2 class="project-heading">Study Notion</h2>
+
+              <p class="project-subHeading">
+                StudyNotion is a fully functional ed-tech platform designed to
+                revolutionize the way we learn and teach.
+              </p>
+              <div class="btn-grp">
+                <a
+                  href="https://github.com/Sushilverma002/Study-Notion"
+                  class="btn-pink btn-project"
+                >
+                  Read More
+                </a>
+                <a href="https://github.com/Sushilverma002/Study-Notion">
+                  <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                </a>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/sara-kurfess-8Klz66m11hU-unsplash.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"><i class="fa-sharp fa-solid fa-vr-cardboard"></i>&nbsp;Twitter Sentiment Analysis - NLP</h5>
-                <p class="card-text">Based on Ml algo-Logistic Regression. <br><strong> Aim of this project was to come up with a ML model which
-                  detect hate speech in tweets. </strong>The sake of simplicity, we say a tweet contains hate speech if it
-                  has a racist or sexist sentiment associated with it. So, the task
-                  is to classify racist or sexist tweets from other tweets.</p>                
-                </div>
+
+          <div class="project-card" id="project2">
+            <div class="project-number project-number-left">02</div>
+            <div class="project-content project-content-right">
+              <div class="project-skill-container">
+                <img
+                  class="project-skill"
+                  src="./images/stack/HTML.png"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/CSS.png"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/Javascript.svg"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/netlify-icon.svg"
+                  alt=""
+                />
+              </div>
+              <h2 class="project-heading">Healthista</h2>
+              <p class="project-sub-heading">
+                I have created a user-friendly website that promotes mental
+                health care </br> and provides resources and support for
+                individuals facing mental health challenges.
+              </p>
+              <div class="btn-group">
+                <a href="https://main--tranquil-gingersnap-b9b61c.netlify.app/" class="btn-pink btn-project">Read More</a>
+                <a href="https://github.com/Sushilverma002/Healthista">
+                  <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                </a>
+                <a href="https://main--tranquil-gingersnap-b9b61c.netlify.app/">
+                  <i title="Live Link" class="fa-solid fa-link icon"></i>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/logo.png" class="card-img-top" alt="..." height="470px" width="-50px">
-              <div class="card-body">
-                <h5 class="card-title"><i class="fa-sharp fa-solid fa-mobile-screen-button"></i> &nbsp;HEALTHISTA</h5>
-                <p class="card-text">I Developed a user-friendly website that promotes mental health care and provides resources and support for individuals facing mental health challenges. Languages use <strong>HTML , CSS , JAVASCRIPT.</strong>
-                </p>
+
+          <div class="project-card" id="project3">
+            <div class="project-number project-number-right">03</div>
+            <div class="project-content project-content-left">
+              <div class="project-skill-container">
+                <img
+                  class="project-skill"
+                  src="./images/stack/React.png"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/Redux.svg"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/Javascript.svg"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/CSS.png"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/firebase-icon.svg"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/MaterialUI.svg"
+                  alt=""
+                />
+              </div>
+
+              <h2 class="project-heading">Linkedin Clone</h2>
+              <p class="project-sub-heading">
+                A LinkedIn clone project have Features include user authentication, profile management, post creation.
+              </p>
+              <div class="btn-group">
+                <a href="https://github.com/Sushilverma002/linkedin-clonee" class="btn-pink btn-project">Read More</a>
+                <a href="https://github.com/Sushilverma002/linkedin-clonee">
+                  <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" id="project4">
+            <div class="project-number project-number-left">04</div>
+            <div class="project-content project-content-right">
+              <div class="project-skill-container">
+                <img
+                  class="project-skill"
+                  src="./images/stack/HTML.png"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/Tailwind.png"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/vitejs.svg"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/netlify-icon.svg"
+                  alt=""
+                />
+              </div>
+              <h2 class="project-heading">Razorpay Clone</h2>
+              <p class="project-sub-heading">
+                This project is a clone of the Razorpay payment gateway interface, <br/>The goal of this project is to replicate the Razorpay frontend interface to <br/>better understand payment gateway user interfaces concepts.
+              </p>
+              <div class="btn-group">
+                <a href="https://github.com/Sushilverma002/razorpay-clone" class="btn-pink btn-project">Read More</a>
+                <a href="https://github.com/Sushilverma002/razorpay-clone">
+                  <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                </a>
+                <a href="https://papaya-sorbet-ea9368.netlify.app/">
+                  <i title="Live Link" class="fa-solid fa-link icon"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div> 
-
-      <!-- last download section 
-      <div class="container" id="container1">
-         <div class="row" id="footer">
-        <h2>Download the App!</h2>
-        <p class="lead">Really, why should I Download this app?</p>
-        <a href="#"><img id="pplaystore" src="images/pg.png" alt=""></a>
       </div>
-    </div> 
 
-    contact-->
-    <a class="gotop" href="#"><i class="fa-solid fa-arrow-up fa-lg"></i></a>
+      <div id="skills" class="container skills-container">
+        <div class="skill-fade-text">Skills</div>
 
-    <footer class="footer-container">
-    <div class="col" id="contact">
-          <h1>
-            CONTACTS
-            <div class="underline"><span></span></div>
-          </h1>
-          <h2> Feel free to reach out to me.</h2>
-          <div class="social-menu">
-            <ul>
-              <a href="https://www.instagram.com/sushil_verma_002/" target="_blank">
-                <li id="social-instagram"><i class="fab fa-2x fa-instagram"></i></li>
-              </a>
-              <a href="https://github.com/Sushilverma002" target="_blank">
-                <li id="social-github"><i class="fab fa-2x fa-github"></i></li>
-              </a>
-              <a href="https://www.linkedin.com/in/sushil-verma-1b228423a/" target="_blank">
-                <li id="social-linkedin"><i class="fab fa-2x fa-linkedin-in"></i></li>
-              </a>
-            </ul>
+        <div class="skill-container-left">
+          <h2 class="skill-heading">
+            <span class="caps">M</span>e and
+            <br />
+            MyTech Stack
+          </h2>
+
+          <div class="skill-subHeading">
+            <p>
+              Hi everyone! My name is Sushil Verma, and I am a Software
+              Developer with a passion for creating dynamic web applications. I
+              have been honing my skills for the past few years, and I’m
+              currently final year of my Bachelor of Technology in Computer
+              Science and Engineering.
+            </p>
+            <p>
+              My expertise lies in using technologies like React, Node.js, and
+              Express to build robust applications, I'm always eager to learn
+              and explore new frameworks, and I am currently diving deep into
+              Nest Js, Docker, to further enhance my backend capabilities.
+            </p>
+            <p>
+              With a commitment to continuous improvement, I strive to stay
+              updated with the latest industry trends and best practices. I look
+              forward to collaborating on exciting projects and contributing my
+              skills to create impactful solutions!
+            </p>
           </div>
         </div>
-    <div id="copyright">
-        <p>&copy; [2023] [Sushil Verma]. All rights reserved.</p>
+
+        <div class="skill-container-right">
+          <img
+            src="./images/userAsset/blob vector.png"
+            class="blob-style"
+            alt=""
+          />
+
+          <img src="./images/stack/c.svg" alt="" class="skills-logo" />
+          <img src="./images/stack/python-icon.svg" alt="" class="skills-logo" />
+          <img src="./images/stack/HTML.png" alt="" class="skills-logo" />
+          <img src="./images/stack/CSS.png" alt="" class="skills-logo" />
+          <img src="./images/stack/Javascript.svg" alt="" class="skills-logo" />
+          <img src="./images/stack/React.png" alt="" class="skills-logo" />
+          <img src="./images/stack/NodeJs.svg" alt="" class="skills-logo" />
+          <img src="./images/stack/Redux.svg" alt="" class="skills-logo" />
+          <img src="./images/stack/Tailwind.png" alt="" class="skills-logo" />
+          <img src="./images/stack/Bootstrap.svg" alt="" class="skills-logo" />
+          <img src="./images/stack/MaterialUI.svg" alt="" class="skills-logo" />
+          <img src="./images/stack/Express.png" alt="" class="skills-logo" />
+          <img
+            src="./images/stack/nestjs-icon.svg"
+            alt=""
+            class="skills-logo"
+          />
+          <img src="./images/stack/Git.svg" alt="" class="skills-logo" />
+          <img src="./images/stack/Github.svg" alt="" class="skills-logo" />
+          <img src="./images/stack/MongoDB.svg" alt="" class="skills-logo" />
+          <img src="./images/stack/mysql-icon.svg" alt="" class="skills-logo" />
+          <img src="./images/stack/Vercel.svg" alt="" class="skills-logo" />
+          <img src="./images/stack/Bash.svg" alt="" class="skills-logo" />
+          <img src="./images/stack/Docker.svg" alt="" class="skills-logo" />
+        </div>
       </div>
-    </footer>
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <div class="contactus-form-container" id="contactme">
+        <div class="container">
+          <h1 class="contactus-heading">Contact me</h1>
+
+          <h3 class="contactus-sub-heading">
+            Questions, thoughts, or just want to say hello?
+          </h3>
+
+          <div class="contactus-form-container">
+            <form class="form" action="">
+              <div class="formfield-container">
+                <input
+                  class="formfield"
+                  type="text"
+                  name="name"
+                  id=""
+                  placeholder="Enter your name"
+                />
+
+                <input
+                  class="formfield"
+                  type="email"
+                  name="email"
+                  id=""
+                  placeholder="Enter your email address"
+                />
+
+                <input
+                  class="formfield"
+                  type="text"
+                  name="subject"
+                  id=""
+                  placeholder="Enter your subject"
+                />
+
+                <textarea
+                  name="message"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  class="formfield formfield-textarea"
+                  placeholder="Enter your message"
+                ></textarea>
+              </div>
+
+              <div>
+                <button type="submit" class="btn-pink" id="submit-btn">
+                  Send Message<i
+                    class="submit-icon fa-solid fa-paper-plane"
+                  ></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-faded-text">Sushil Verma</div>
+
+            <div class="link-wrapper">
+              <div>
+                <a href="#projects">Projects</a>
+              </div>
+              <div>
+                <a href="#skills">Skills</a>
+              </div>
+              <div>
+                <a href="#contactme">Contact Me</a>
+              </div>
+            </div>
+
+            <div class="icon-wrapper">
+              <a href="https://www.linkedin.com/in/sushil-verma-1b228423a/"> 
+                <i class="fa-brands fa-linkedin icon"></i>
+              </a>
+              <a href="https://github.com/Sushilverma002/"> 
+                <i class="fa-brands fa-github icon"></i>
+              </a>
+              <a href="https://x.com/Sushilv27796914"> 
+                <i class="fa-brands fa-twitter icon"></i>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://kit.fontawesome.com/f883ddb2eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var typeData = new Typed(".role", {
+        strings: [
+          "Software Developer",
+          "Full Stack Developer",
+          "Backend Developer",
+          "Web Developer",
+          "Coder",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+      });
+    </script>
   </body>
-</hmtl>
+</html>
