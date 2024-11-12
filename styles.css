@@ -436,19 +436,22 @@ a {
   transform: scale(1.1);
 }
 
+#project {
+  background-image: url(./images/projects/choicedekho.png);
+}
 #project1 {
   background-image: url(./images/projects/studyNotion.png);
+  margin-left: 120px;
 }
 
 #project2 {
-  margin-left: 120px;
   background-image: url(./images/projects/healthista.png);
 }
 #project3 {
+  margin-left: 120px;
   background-image: url(./images/projects/linkedinClone.png);
 }
 #project4 {
-  margin-left: 120px;
   background-image: url(./images/projects/razorpay.png);
 }
 
